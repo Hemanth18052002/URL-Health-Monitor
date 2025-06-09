@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: black;
+  background-color: whitesmoke;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #3fe077;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  text-align: center; /* Centers the text horizontally */
+}
+
+h1 {
+  font-size: 3.2em;
+  color: hsl(141, 67%, 55%);
+  line-height: 1.1;
+  margin-bottom: 20px; /* Adjust spacing between the heading and content */
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #3fe077;
+  color: black;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 20px; /* Adds space between the button and the heading */
+}
+
+button:hover {
+  background-color: #39ef79;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+table, th, td {
+  border-color: black;
+}
+
+input {
+  width: 25%;
+  padding: 12px 15px;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  color: gray;
+  border-radius: 8px;
+}
+
+input:focus {
+  box-shadow: 0 0 0 2px gray;
+}
+
+.status-up {
+  color: green;
+  font-weight: bold;
+}
+
+.status-down {
+  color: red;
+  font-weight: bold;
+}
+
+/* Arrows next to status */
+.status-arrow {
+  margin-left: 5px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 768px) {
+  input {
+    width: 100%; /* Makes the search bar full width on smaller screens */
+  }
+}
