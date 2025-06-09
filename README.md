@@ -43,6 +43,15 @@ URLHealthMonitor/
 └── requirements.txt   # Python dependencies
 ```
 
+## Website
+
+![image](https://github.com/user-attachments/assets/59057154-b89b-41d3-ae4a-6403eb22347d)
+
+![image](https://github.com/user-attachments/assets/a06a01f2-9ccb-4229-8a80-9053e991b928)
+
+![image](https://github.com/user-attachments/assets/d5f9aa16-af2a-4d96-bc6b-8c41e65c9531)
+
+
 ## Installation
 
 ### Prerequisites
@@ -101,21 +110,24 @@ GET /history/{url_id}
 3. View real-time health status and response times
 4. Check historical data for each URL
 
-## Contributing
+## Dockerization
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+This application is fully containerized using Docker and Docker Compose, making it easy to deploy and run consistently across different environments. The project includes separate Docker configurations for both the backend (FastAPI) and frontend (React/Vite) services, with proper volume mounts for development and environment-based configurations. The docker-compose.yml file orchestrates both services, ensuring they work seamlessly together with proper networking and port mappings.
 
-## License
+![image](https://github.com/user-attachments/assets/7393950b-fdf5-4726-85b0-d2e162c86c1e)
 
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Support
+## AI Assistance
 
-For support, please open an issue in the GitHub repository.
+This project was developed with the assistance of Windsurf-Codieum AI, an advanced AI coding assistant designed by the Windsurf engineering team. Windsurf-Codieum provided expert guidance throughout the development process, helping with:
+- Architecture design and implementation
+- Docker containerization
+- Error resolution and debugging
+- Code optimization and best practices
+- Documentation generation
+
+![image](https://github.com/user-attachments/assets/19cb6852-af43-498a-bc58-5ca9f87afeb0)
+
 
 ## Acknowledgments
 
