@@ -34,13 +34,11 @@ A modern web application for monitoring the health and uptime of multiple URLs. 
 ```
 URLHealthMonitor/
 ├── backend/           # FastAPI backend service
-│   ├── main.py       # Main FastAPI application
-│   ├── models.py     # Database models
-│   └── schemas.py    # Pydantic schemas
+│   ├── main.py        # Main FastAPI application
 ├── frontend/          # React frontend application
-│   ├── src/          # Source code
-│   ├── public/       # Static assets
-│   └── package.json  # Dependencies
+│   ├── src/           # Source code
+│   ├── public/        # Static assets
+│   └── package.json   # Dependencies
 ├── docker-compose.yml # Docker configuration
 └── requirements.txt   # Python dependencies
 ```
